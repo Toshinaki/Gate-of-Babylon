@@ -30,7 +30,7 @@ jobs:
           CI: true
 
       - name: export static html ⚓
-      - run: npm run export
+        run: npm run export
       - run: touch ./.nojekyll
 
       - name: Deploy 🚀
