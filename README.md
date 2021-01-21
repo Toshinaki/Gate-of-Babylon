@@ -22,4 +22,5 @@ learn:
 
 #### == 2021-01-22 ========================================
 - added tailwind, apollo-client, material-ui and many
+- added github action to generate static site to github page
 - filling files
