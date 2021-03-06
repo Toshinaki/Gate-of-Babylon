@@ -1,6 +1,6 @@
 // state
 import { visibilityFilterVar, todosVar } from "app/apollo/main/todo";
-import { todoMutations } from "./apollo/mutations";
+import { todoMutations } from "app/apollo/main/todo/mutations";
 // components
 import TodoList from "./components/TodoList";
 // constants

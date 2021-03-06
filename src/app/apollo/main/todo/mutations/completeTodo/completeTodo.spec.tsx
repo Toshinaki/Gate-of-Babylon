@@ -1,5 +1,5 @@
 import createCompleteTodo from "./completeTodo";
-import { mockTodosVar } from "../../../tests/mocks/mockTodosVar";
+import { mockTodosVar } from "app/apollo/tests/mocks/todo/mockTodosVar";
 
 const completeTodo = createCompleteTodo(mockTodosVar);
 

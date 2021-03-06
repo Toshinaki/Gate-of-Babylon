@@ -1,5 +1,5 @@
 import createDeleteTodo from "./deleteTodo";
-import { mockTodosVar } from "../../../tests/mocks/mockTodosVar";
+import { mockTodosVar } from "app/apollo/tests/mocks/todo/mockTodosVar";
 
 const deleteTodo = createDeleteTodo(mockTodosVar);
 

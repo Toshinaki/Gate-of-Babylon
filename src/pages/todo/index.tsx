@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useReactiveVar } from "@apollo/client";
 import { todosVar, visibilityFilterVar } from "app/apollo/main/todo";
 // functions
-import { todoMutations } from "./apollo/mutations";
+import { todoMutations } from "app/apollo/main/todo/mutations";
 // components
 import Header from "./components/Header";
 import Footer from "./components/Footer";

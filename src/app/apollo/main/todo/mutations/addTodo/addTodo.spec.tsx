@@ -1,5 +1,5 @@
 import createAddTodo from "./addTodo";
-import { mockTodosVar } from "../../../tests/mocks/mockTodosVar";
+import { mockTodosVar } from "app/apollo/tests/mocks/todo/mockTodosVar";
 
 const addTodo = createAddTodo(mockTodosVar);
 

@@ -1,4 +1,4 @@
-import { createMockReactiveVar } from "app/apollo/tests/createMockReactiveVar";
+import { createMockReactiveVar } from "app/apollo/tests/mocks/createMockReactiveVar";
 import {
   VisibilityFilter,
   VisibilityFilters,

@@ -1,6 +1,6 @@
 import createSetVisibilityFilter from "./setVisibilityFilter";
 import { VisibilityFilters } from "app/models/todo/VisibilityFilter";
-import { mockVisibilityFilter } from "../../../tests/mocks/mockVisibilityFilter";
+import { mockVisibilityFilter } from "app/apollo/tests/mocks/todo/mockVisibilityFilter";
 
 const setVisibilityFilter = createSetVisibilityFilter(mockVisibilityFilter);
 
