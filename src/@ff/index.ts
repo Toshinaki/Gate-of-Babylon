@@ -1,3 +1,4 @@
+// core
 // export { default as FFAnimate } from "./core/FFAnimate/FFAnimate";
 // export { default as FFAnimateGroup } from "./core/FFAnimate/FFAnimateGroup";
 // export { default as FFAuthorization } from "./core/FFAuthorization";
@@ -16,7 +17,6 @@
 // export { default as FFSuspense } from "./core/FFSuspense";
 // export { default as FFSwipeable } from "./core/FFSwipeable";
 // export { default as FFTheme } from "./core/FFTheme";
-export { default as FFUtils } from "./FFUtils";
 
 // export { CollapseGroup } from "./core/FFTransitionGroup";
 
@@ -25,3 +25,8 @@ export { default as FFUtils } from "./FFUtils";
 // export { default as Layouts } from "app/app-layouts";
 // export { default as LayoutConfigs } from "app/app-layouts/layoutConfigs";
 // export { default as NavLinkAdapter } from "./core/NavLinkAdapter";
+
+// components
+// export { default as FadeComponent } from "./components/FadeComponent";
+
+export { default as FFUtils } from "./FFUtils";
