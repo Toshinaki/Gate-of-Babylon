@@ -1,4 +1,4 @@
-import createAddTodo from "./mutations/addTodo/addTodo";
+import createAddTodo from "./addTodo/addTodo";
 import createClearCompletedTodos from "./clearCompletedTodos/clearCompletedTodos";
 import createCompleteTodo from "./completeTodo/completeTodo";
 import createCompleteAllTodos from "./completeAllTodos/completeAllTodos";
