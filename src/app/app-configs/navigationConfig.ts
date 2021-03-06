@@ -1,7 +1,7 @@
-import { NavigationState } from "app/apollo/local/types";
+// import { NavigationState } from "app/apollo/local/types";
 import * as urls from "app/constants/frontRoutes";
 
-const navigationConfig: NavigationState = [
+const navigationConfig = [
   {
     id: "tool",
     title: "Tools",
