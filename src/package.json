@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "export": "next export -o build/",
-    "test": "jest --watch"
+    "export:dev": "npm run clean && next export -o build/",
+    "test": "jest --watch",
+    "clean": "rimraf build/"
   },
   "dependencies": {
     "@apollo/client": "latest",
@@ -35,6 +37,7 @@
     "jss-plugin-extend": "^10.5.0",
     "postcss-preset-env": "^6.7.0",
     "purgecss": "^4.0.0",
+    "rimraf": "^3.0.2",
     "tailwindcss": "^2.0.2",
     "typescript": "^4.1.3"
   }

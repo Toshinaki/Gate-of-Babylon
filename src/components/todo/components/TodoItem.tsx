@@ -47,7 +47,7 @@ const TodoItem = ({ todo, editTodo, deleteTodo, completeTodo }: any) => {
   );
 };
 
-TodoItem.PropTypes = {
+TodoItem.propTypes = {
   todo: PropTypes.object.isRequired,
   editTodo: PropTypes.func.isRequired,
   deleteTodo: PropTypes.func.isRequired,

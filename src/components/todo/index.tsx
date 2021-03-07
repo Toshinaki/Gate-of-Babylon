@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 // state
 import { useReactiveVar } from "@apollo/client";
-import { todosVar, visibilityFilterVar } from "app/apollo/main/todo";
+import { todosVar } from "app/apollo/main/todo";
 // functions
 import { todoMutations } from "app/apollo/main/todo/mutations";
 // components
@@ -17,7 +17,7 @@ import VisibleTodoList from "./VisibleTodoList";
 
 const Container = () => {
   const todos = useReactiveVar(todosVar);
-  const activeVisibilityFilter = useReactiveVar(visibilityFilterVar);
+  // const activeVisibilityFilter = useReactiveVar(visibilityFilterVar);
 
   const todosCount = todos.length;
   const completedCount = todos.filter((t) => t.completed).length;
@@ -41,7 +41,7 @@ const Container = () => {
         <VisibleTodoList />
         {!!todosCount && (
           <Footer
-            activeVisibilityFilter={activeVisibilityFilter}
+            // activeVisibilityFilter={activeVisibilityFilter}
             completedCount={completedCount}
             activeCount={todosCount - completedCount}
             onClearCompleted={todoMutations.clearCompletedTodos}

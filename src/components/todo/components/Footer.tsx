@@ -1,4 +1,7 @@
 import PropTypes from "prop-types";
+// state
+import { useReactiveVar } from "@apollo/client";
+import { visibilityFilterVar } from "app/apollo/main/todo";
 // functions
 import clsx from "clsx";
 // constants
@@ -8,7 +11,7 @@ import {
 } from "app/models/todo/VisibilityFilter";
 
 interface FooterProps {
-  activeVisibilityFilter: VisibilityFilter;
+  // activeVisibilityFilter: VisibilityFilter;
   activeCount: number;
   completedCount: number;
   onClearCompleted: () => void;
@@ -19,10 +22,10 @@ const Footer = ({
   activeCount,
   completedCount,
   onClearCompleted,
-  activeVisibilityFilter,
   setVisibilityFilter,
 }: FooterProps) => {
   const itemWord = activeCount === 1 ? "item" : "items";
+  const activeVisibilityFilter = useReactiveVar(visibilityFilterVar);
   return (
     <footer className="footer">
       <span className="todo-count">
@@ -59,10 +62,10 @@ Footer.propTypes = {
   activeCount: PropTypes.number.isRequired,
   onClearCompleted: PropTypes.func.isRequired,
   setVisibilityFilter: PropTypes.func.isRequired,
-  activeVisibilityFilter: PropTypes.shape({
-    id: PropTypes.string,
-    displayName: PropTypes.string,
-  }).isRequired,
+  // activeVisibilityFilter: PropTypes.shape({
+  //   id: PropTypes.string,
+  //   displayName: PropTypes.string,
+  // }).isRequired,
 };
 
 export default Footer;

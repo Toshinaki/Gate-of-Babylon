@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { GetStaticProps } from "next";
+// import { initializeApollo } from "app/apollo";
 
 export default function Home() {
   return (
@@ -211,7 +212,11 @@ export default function Home() {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  // const apolloClient = initializeApollo();
+
   return {
-    props: {},
+    props: {
+      //   initialApolloState: apolloClient.cache.extract(),
+    },
   };
 };

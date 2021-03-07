@@ -1,4 +1,5 @@
 // state
+import { useReactiveVar } from "@apollo/client";
 import { visibilityFilterVar, todosVar } from "app/apollo/main/todo";
 import { todoMutations } from "app/apollo/main/todo/mutations";
 // components
@@ -28,8 +29,11 @@ function filterTodosByVisibility(
 
 export default function VisibleTodoList() {
   const { completeTodo, deleteTodo, editTodo } = todoMutations;
-  const todos = todosVar();
-  const filteredTodos = filterTodosByVisibility(visibilityFilterVar(), todos);
+  const todos = useReactiveVar(todosVar);
+  const filteredTodos = filterTodosByVisibility(
+    useReactiveVar(visibilityFilterVar),
+    todos
+  );
 
   return (
     <TodoList
